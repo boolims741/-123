@@ -1,0 +1,1447 @@
+{
+  "candidate": "v0.10.0.0",
+  "engine_tested": false,
+  "crash_root_cause_confirmed": false,
+  "observed_v9_result": "Game launches; campaign loading exits.",
+  "log_evidence": {
+    "actual_game_build": "1.5.6.125053",
+    "activated_naval_dlc": true,
+    "original_distance_caches_read": [
+      "Default",
+      "Naval",
+      "All"
+    ],
+    "runs_ending_after_1484_hero_creations": 5,
+    "exception_stack_present": false
+  },
+  "runtime": {
+    "model": "EastAsiaMap.Runtime.EastAsiaNavalMapDistanceModel",
+    "submodule": "EastAsiaMap.Runtime.EastAsiaMapSubModule",
+    "compile_references": "Bannerlord.ReferenceAssemblies 1.5.6.125053-beta; .NET Standard 2.0",
+    "source_sha256": "a313b304136e0a2ec2a8ad446e12254f2f02109923c8b824d000e912cd58964e",
+    "dll_sha256": "69b3473a6dcb91d8581af59866e9614492025ddaf67aa91e2c8067a4c5c81cad",
+    "managed_behavioral_cases_passed": 10,
+    "cache_generation": "Once per capability per game; lazy native engine regeneration; no fake distance fallback",
+    "first_chance_exception_limit": 32
+  },
+  "source_sha256": {
+    "ModuleData/settlements.xml": "8bc6dc34f44226e15e39683c2c9c4c7bab49bd29173f99afe2383b030cb50eba",
+    "SceneObj/Main_map/atmosphere.xml": "956205e14bc57a2cd15b709aa1bd12d557e9e73dd25fb23e01aea5bfa509369c",
+    "SceneObj/Main_map/flora.bin": "a711b21e6cf9374aaf87b613e945f381b68a827fdf7dd8395add83364ed0a569",
+    "SceneObj/Main_map/navmesh.bin": "df792116c1a62705d3349f80bbbd7377cc5b59272e9cbc49a4ca49fd44a4106b",
+    "SceneObj/Main_map/references.txt": "edaefeff4cbb750d0773af11666b56666a08965eef40980bc32bb6a69a828f8b",
+    "SceneObj/Main_map/scene.xscene": "9c2b366f9c46feda59caa17f0b5fef40de8b3d321cdc07d5e0a3b3664df5f59d",
+    "SceneObj/Main_map/terrain.bin": "08c3b4cc79432248a5c3fcde06ee4e0df1e0e828c7f8e7fcfb0abf848402c161",
+    "SubModule.xml": "a7f18f3885c3446d59107667fc915692bdcebe2a6ec1909a2a453ebbc59b507b"
+  },
+  "output_sha256": {
+    "ModuleData/settlements.xml": "8bc6dc34f44226e15e39683c2c9c4c7bab49bd29173f99afe2383b030cb50eba",
+    "SceneObj/Main_map/atmosphere.xml": "956205e14bc57a2cd15b709aa1bd12d557e9e73dd25fb23e01aea5bfa509369c",
+    "SceneObj/Main_map/flora.bin": "a711b21e6cf9374aaf87b613e945f381b68a827fdf7dd8395add83364ed0a569",
+    "SceneObj/Main_map/navmesh.bin": "df792116c1a62705d3349f80bbbd7377cc5b59272e9cbc49a4ca49fd44a4106b",
+    "SceneObj/Main_map/references.txt": "edaefeff4cbb750d0773af11666b56666a08965eef40980bc32bb6a69a828f8b",
+    "SceneObj/Main_map/scene.xscene": "62bb99c77aa431696dccdd622566fd0f211f0566a6d7ec1712ffa6d0d8a9c610",
+    "SceneObj/Main_map/terrain.bin": "08c3b4cc79432248a5c3fcde06ee4e0df1e0e828c7f8e7fcfb0abf848402c161",
+    "SubModule.xml": "0cb72a64570c8ee0077b5afa2cf9f4b5871299e07b319636448411c719f19210",
+    "bin/Win64_Shipping_Client/EastAsiaMap.Runtime.dll": "69b3473a6dcb91d8581af59866e9614492025ddaf67aa91e2c8067a4c5c81cad"
+  },
+  "previous_structural_validation": {
+    "candidate": "v0.9.0.0",
+    "game_version_reported_by_user": "1.5.6",
+    "engine_tested": false,
+    "crash_root_cause_confirmed": false,
+    "settlements_registered": true,
+    "source": "Uploaded EastAsiaMap_Trial_v8_settlements_isolation.zip",
+    "changes": {
+      "horizon_mesh_height": {
+        "before": 3.2133660209904916e+34,
+        "after": 0
+      },
+      "terrain_bounds_expanded": [
+        {
+          "x": 0,
+          "y": 0,
+          "before": [
+            10.681,
+            56.107
+          ],
+          "after": [
+            0.0,
+            56.107
+          ]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "before": [
+            11.008,
+            52.924
+          ],
+          "after": [
+            10.801,
+            52.924
+          ]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "before": [
+            10.681,
+            54.052
+          ],
+          "after": [
+            10.681,
+            54.058
+          ]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "before": [
+            10.681,
+            54.354
+          ],
+          "after": [
+            10.681,
+            54.67
+          ]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "before": [
+            10.681,
+            55.236
+          ],
+          "after": [
+            10.681,
+            55.242
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "before": [
+            0.0,
+            46.345
+          ],
+          "after": [
+            0.0,
+            46.355
+          ]
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "before": [
+            10.681,
+            45.281
+          ],
+          "after": [
+            10.681,
+            45.327
+          ]
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "before": [
+            10.681,
+            54.176
+          ],
+          "after": [
+            10.681,
+            54.192
+          ]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "before": [
+            0.0,
+            26.744
+          ],
+          "after": [
+            0.0,
+            26.764
+          ]
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "before": [
+            10.681,
+            37.122
+          ],
+          "after": [
+            10.681,
+            37.129
+          ]
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "before": [
+            10.681,
+            36.316
+          ],
+          "after": [
+            10.681,
+            36.382
+          ]
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "before": [
+            10.681,
+            39.074
+          ],
+          "after": [
+            10.681,
+            39.117
+          ]
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "before": [
+            10.681,
+            49.34
+          ],
+          "after": [
+            10.681,
+            49.353
+          ]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "before": [
+            0.0,
+            36.852
+          ],
+          "after": [
+            0.0,
+            36.868
+          ]
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "before": [
+            0.0,
+            33.23
+          ],
+          "after": [
+            0.0,
+            33.234
+          ]
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "before": [
+            0.0,
+            26.83
+          ],
+          "after": [
+            0.0,
+            26.845
+          ]
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "before": [
+            10.681,
+            47.794
+          ],
+          "after": [
+            10.681,
+            47.812
+          ]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "before": [
+            0.0,
+            23.075
+          ],
+          "after": [
+            0.0,
+            23.242
+          ]
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "before": [
+            0.0,
+            29.516
+          ],
+          "after": [
+            0.0,
+            29.561
+          ]
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "before": [
+            0.0,
+            29.014
+          ],
+          "after": [
+            0.0,
+            29.019
+          ]
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "before": [
+            10.681,
+            42.081
+          ],
+          "after": [
+            10.681,
+            42.165
+          ]
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "before": [
+            0.0,
+            8.557
+          ],
+          "after": [
+            0.0,
+            8.56
+          ]
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "before": [
+            0.0,
+            28.521
+          ],
+          "after": [
+            0.0,
+            28.781
+          ]
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "before": [
+            0.0,
+            28.643
+          ],
+          "after": [
+            0.0,
+            28.644
+          ]
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "before": [
+            0.0,
+            32.453
+          ],
+          "after": [
+            0.0,
+            32.55
+          ]
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "before": [
+            0.0,
+            43.452
+          ],
+          "after": [
+            0.0,
+            43.519
+          ]
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "before": [
+            10.681,
+            40.667
+          ],
+          "after": [
+            10.681,
+            40.68
+          ]
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "before": [
+            0.0,
+            28.473
+          ],
+          "after": [
+            0.0,
+            28.479
+          ]
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "before": [
+            0.0,
+            24.967
+          ],
+          "after": [
+            0.0,
+            25.107
+          ]
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "before": [
+            0.0,
+            39.065
+          ],
+          "after": [
+            0.0,
+            39.069
+          ]
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "before": [
+            0.0,
+            30.733
+          ],
+          "after": [
+            0.0,
+            30.745
+          ]
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "before": [
+            0.0,
+            35.0
+          ],
+          "after": [
+            0.0,
+            35.015
+          ]
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "before": [
+            0.0,
+            26.435
+          ],
+          "after": [
+            0.0,
+            26.458
+          ]
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "before": [
+            0.0,
+            30.475
+          ],
+          "after": [
+            0.0,
+            30.603
+          ]
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "before": [
+            0.0,
+            27.817
+          ],
+          "after": [
+            0.0,
+            27.845
+          ]
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "before": [
+            0.0,
+            35.798
+          ],
+          "after": [
+            0.0,
+            35.828
+          ]
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "before": [
+            0.0,
+            38.946
+          ],
+          "after": [
+            0.0,
+            39.063
+          ]
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "before": [
+            0.0,
+            28.431
+          ],
+          "after": [
+            0.0,
+            28.487
+          ]
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "before": [
+            0.0,
+            26.763
+          ],
+          "after": [
+            0.0,
+            26.778
+          ]
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "before": [
+            0.0,
+            31.098
+          ],
+          "after": [
+            0.0,
+            31.196
+          ]
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "before": [
+            0.0,
+            38.962
+          ],
+          "after": [
+            0.0,
+            39.02
+          ]
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "before": [
+            0.0,
+            27.03
+          ],
+          "after": [
+            0.0,
+            27.047
+          ]
+        }
+      ],
+      "modified_files": [
+        "SceneObj/Main_map/scene.xscene",
+        "SubModule.xml"
+      ]
+    },
+    "source_sha256": {
+      "ModuleData/settlements.xml": "8bc6dc34f44226e15e39683c2c9c4c7bab49bd29173f99afe2383b030cb50eba",
+      "SceneObj/Main_map/atmosphere.xml": "956205e14bc57a2cd15b709aa1bd12d557e9e73dd25fb23e01aea5bfa509369c",
+      "SceneObj/Main_map/flora.bin": "a711b21e6cf9374aaf87b613e945f381b68a827fdf7dd8395add83364ed0a569",
+      "SceneObj/Main_map/navmesh.bin": "df792116c1a62705d3349f80bbbd7377cc5b59272e9cbc49a4ca49fd44a4106b",
+      "SceneObj/Main_map/references.txt": "edaefeff4cbb750d0773af11666b56666a08965eef40980bc32bb6a69a828f8b",
+      "SceneObj/Main_map/scene.xscene": "9c2b366f9c46feda59caa17f0b5fef40de8b3d321cdc07d5e0a3b3664df5f59d",
+      "SceneObj/Main_map/terrain.bin": "08c3b4cc79432248a5c3fcde06ee4e0df1e0e828c7f8e7fcfb0abf848402c161",
+      "SubModule.xml": "a7f18f3885c3446d59107667fc915692bdcebe2a6ec1909a2a453ebbc59b507b"
+    },
+    "output_sha256": {
+      "ModuleData/settlements.xml": "8bc6dc34f44226e15e39683c2c9c4c7bab49bd29173f99afe2383b030cb50eba",
+      "SceneObj/Main_map/atmosphere.xml": "956205e14bc57a2cd15b709aa1bd12d557e9e73dd25fb23e01aea5bfa509369c",
+      "SceneObj/Main_map/flora.bin": "a711b21e6cf9374aaf87b613e945f381b68a827fdf7dd8395add83364ed0a569",
+      "SceneObj/Main_map/navmesh.bin": "df792116c1a62705d3349f80bbbd7377cc5b59272e9cbc49a4ca49fd44a4106b",
+      "SceneObj/Main_map/references.txt": "edaefeff4cbb750d0773af11666b56666a08965eef40980bc32bb6a69a828f8b",
+      "SceneObj/Main_map/scene.xscene": "2ef14f40410fcae33cda3f8cbc05db6b610f789ed6f0a5759a5124d48f2ede98",
+      "SceneObj/Main_map/terrain.bin": "08c3b4cc79432248a5c3fcde06ee4e0df1e0e828c7f8e7fcfb0abf848402c161",
+      "SubModule.xml": "c184f406b90c4123cac707b23dec67ee1bfbf4c5eb9d820d47f24ae405cd3dfe"
+    },
+    "terrain": {
+      "dimensions": [
+        10,
+        6
+      ],
+      "chunks": {
+        "MIDX": {
+          "version": 1,
+          "packed": 322,
+          "unpacked": 28856,
+          "offset": 112
+        },
+        "HGHT": {
+          "version": 1,
+          "packed": 3457649,
+          "unpacked": 3451775,
+          "offset": 434
+        },
+        "NRML": {
+          "version": 1,
+          "packed": 3282725,
+          "unpacked": 3288081,
+          "offset": 3458323
+        },
+        "WGHT": {
+          "version": 1,
+          "packed": 575960,
+          "unpacked": 606545,
+          "offset": 6741288
+        },
+        "PHYM": {
+          "version": 1,
+          "packed": 181035,
+          "unpacked": 15853680,
+          "offset": 7317488
+        }
+      },
+      "pngs_verified": 293,
+      "material_indices": [
+        [
+          255
+        ],
+        [
+          255
+        ],
+        [
+          255
+        ],
+        [
+          255
+        ]
+      ],
+      "node_height_comparisons": [
+        {
+          "x": 0,
+          "y": 0,
+          "xml": [
+            0.0,
+            56.107
+          ],
+          "binary": [
+            0.0,
+            56.107
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "xml": [
+            0.0,
+            46.355
+          ],
+          "binary": [
+            0.0,
+            46.35473270771343
+          ]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "xml": [
+            0.0,
+            26.764
+          ],
+          "binary": [
+            0.0,
+            26.763728191042954
+          ]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "xml": [
+            0.0,
+            36.868
+          ],
+          "binary": [
+            0.0,
+            36.86786817730983
+          ]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "xml": [
+            0.0,
+            23.242
+          ],
+          "binary": [
+            0.0,
+            23.241576699473566
+          ]
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "xml": [
+            0.0,
+            8.56
+          ],
+          "binary": [
+            0.0,
+            8.559667139696346
+          ]
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "xml": [
+            0.0,
+            28.479
+          ],
+          "binary": [
+            0.0,
+            28.47857248798352
+          ]
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "xml": [
+            0.0,
+            0.0
+          ],
+          "binary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "xml": [
+            0.0,
+            0.0
+          ],
+          "binary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "x": 9,
+          "y": 0,
+          "xml": [
+            0.0,
+            0.0
+          ],
+          "binary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "xml": [
+            10.801,
+            52.924
+          ],
+          "binary": [
+            10.801036270695048,
+            52.923879133287556
+          ]
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "xml": [
+            10.681,
+            43.098
+          ],
+          "binary": [
+            10.681176958876936,
+            43.097127840085456
+          ]
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "xml": [
+            10.681,
+            39.51
+          ],
+          "binary": [
+            10.681176958876936,
+            39.5090537270161
+          ]
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "xml": [
+            0.0,
+            33.234
+          ],
+          "binary": [
+            0.0,
+            33.23356261539635
+          ]
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "xml": [
+            0.0,
+            29.561
+          ],
+          "binary": [
+            0.0,
+            29.560730846112765
+          ]
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "xml": [
+            0.0,
+            28.781
+          ],
+          "binary": [
+            0.0,
+            28.780789181353473
+          ]
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "xml": [
+            0.0,
+            28.84
+          ],
+          "binary": [
+            0.0,
+            28.839006561379414
+          ]
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "xml": [
+            0.0,
+            30.745
+          ],
+          "binary": [
+            0.0,
+            30.744769619287407
+          ]
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "xml": [
+            0.0,
+            27.845
+          ],
+          "binary": [
+            0.0,
+            27.84417427328908
+          ]
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "xml": [
+            0.0,
+            0.0
+          ],
+          "binary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "xml": [
+            10.681,
+            54.058
+          ],
+          "binary": [
+            10.681176958876936,
+            54.057405767910275
+          ]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "xml": [
+            10.681,
+            47.257
+          ],
+          "binary": [
+            10.681176958876936,
+            47.25624596017395
+          ]
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "xml": [
+            10.681,
+            37.129
+          ],
+          "binary": [
+            10.681176958876936,
+            37.12899024948501
+          ]
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "xml": [
+            0.0,
+            26.845
+          ],
+          "binary": [
+            0.0,
+            26.844205157549403
+          ]
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "xml": [
+            0.0,
+            27.216
+          ],
+          "binary": [
+            0.0,
+            27.215769024185548
+          ]
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "xml": [
+            0.0,
+            28.644
+          ],
+          "binary": [
+            0.0,
+            28.643807110704202
+          ]
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "xml": [
+            0.0,
+            28.544
+          ],
+          "binary": [
+            0.0,
+            28.542782833600363
+          ]
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "xml": [
+            0.0,
+            35.015
+          ],
+          "binary": [
+            0.0,
+            35.01432953383688
+          ]
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "xml": [
+            0.0,
+            35.828
+          ],
+          "binary": [
+            0.0,
+            35.82766057831693
+          ]
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "xml": [
+            0.0,
+            26.778
+          ],
+          "binary": [
+            0.0,
+            26.77742639810788
+          ]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "xml": [
+            10.681,
+            54.67
+          ],
+          "binary": [
+            10.681176958876936,
+            54.66954439612421
+          ]
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "xml": [
+            10.681,
+            45.327
+          ],
+          "binary": [
+            10.681176958876936,
+            45.32651103990234
+          ]
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "xml": [
+            10.681,
+            36.382
+          ],
+          "binary": [
+            10.681176958876936,
+            36.38158182650492
+          ]
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "xml": [
+            0.0,
+            28.846
+          ],
+          "binary": [
+            0.0,
+            28.84499952697032
+          ]
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "xml": [
+            0.0,
+            29.019
+          ],
+          "binary": [
+            0.0,
+            29.018795529106587
+          ]
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "xml": [
+            0.0,
+            32.55
+          ],
+          "binary": [
+            0.0,
+            32.549508400091554
+          ]
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "xml": [
+            0.0,
+            25.107
+          ],
+          "binary": [
+            0.0,
+            25.10624513618677
+          ]
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "xml": [
+            0.0,
+            0.0
+          ],
+          "binary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "xml": [
+            0.0,
+            39.063
+          ],
+          "binary": [
+            0.0,
+            39.06214972152285
+          ]
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "xml": [
+            0.0,
+            31.196
+          ],
+          "binary": [
+            0.0,
+            31.195098176546885
+          ]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "xml": [
+            10.681,
+            55.242
+          ],
+          "binary": [
+            10.681176958876936,
+            55.24144454108492
+          ]
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "xml": [
+            10.681,
+            39.918
+          ],
+          "binary": [
+            10.681176958876936,
+            39.91657538719768
+          ]
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "xml": [
+            10.681,
+            39.117
+          ],
+          "binary": [
+            10.681176958876936,
+            39.116086411840996
+          ]
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "xml": [
+            10.681,
+            32.319
+          ],
+          "binary": [
+            10.681176958876936,
+            32.31835115587091
+          ]
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "xml": [
+            0.0,
+            27.504
+          ],
+          "binary": [
+            0.0,
+            27.503431372549016
+          ]
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "xml": [
+            0.0,
+            43.519
+          ],
+          "binary": [
+            0.0,
+            43.51834770733196
+          ]
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "xml": [
+            0.0,
+            39.069
+          ],
+          "binary": [
+            0.0,
+            39.068142687113756
+          ]
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "xml": [
+            0.0,
+            26.458
+          ],
+          "binary": [
+            0.0,
+            26.45723080796521
+          ]
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "xml": [
+            0.0,
+            28.487
+          ],
+          "binary": [
+            0.0,
+            28.48627772945754
+          ]
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "xml": [
+            0.0,
+            39.02
+          ],
+          "binary": [
+            0.0,
+            39.01934282444495
+          ]
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "xml": [
+            10.681,
+            54.121
+          ],
+          "binary": [
+            10.681176958876936,
+            54.11990383764401
+          ]
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "xml": [
+            10.681,
+            54.192
+          ],
+          "binary": [
+            10.681176958876936,
+            54.191819424734874
+          ]
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "xml": [
+            10.681,
+            49.353
+          ],
+          "binary": [
+            10.681176958876936,
+            49.35292777904936
+          ]
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "xml": [
+            10.681,
+            47.812
+          ],
+          "binary": [
+            10.681176958876936,
+            47.81187948424506
+          ]
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "xml": [
+            10.681,
+            42.165
+          ],
+          "binary": [
+            10.681176958876936,
+            42.16479362172885
+          ]
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "xml": [
+            10.681,
+            40.68
+          ],
+          "binary": [
+            10.681176958876936,
+            40.67939429312581
+          ]
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "xml": [
+            10.681,
+            42.661
+          ],
+          "binary": [
+            10.681176958876936,
+            42.66049748989089
+          ]
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "xml": [
+            0.0,
+            30.603
+          ],
+          "binary": [
+            0.0,
+            30.60265072098878
+          ]
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "xml": [
+            0.0,
+            27.269
+          ],
+          "binary": [
+            0.0,
+            27.268849576562143
+          ]
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "xml": [
+            0.0,
+            27.047
+          ],
+          "binary": [
+            0.0,
+            27.04625371175708
+          ]
+        }
+      ]
+    },
+    "navmesh": {
+      "path": "/workspace/-123/source/EastAsiaMap_Trial/SceneObj/Main_map/navmesh.bin",
+      "sha256": "df792116c1a62705d3349f80bbbd7377cc5b59272e9cbc49a4ca49fd44a4106b",
+      "container": "RNM1",
+      "decoded_format": "NMG9",
+      "container_bytes": 1869102,
+      "compressed_payload_bytes": 1869054,
+      "decoded_bytes": 4945347,
+      "vertices": 42560,
+      "edges": 84694,
+      "faces": 42135,
+      "coordinate_min": [
+        0.0,
+        0.0,
+        0.6000000238418579
+      ],
+      "coordinate_max": [
+        1060.0,
+        636.0,
+        56.42267990112305
+      ],
+      "edge_face_incidence_histogram": {
+        "1": 848,
+        "2": 83846
+      },
+      "raw_face_field_histograms": [
+        {
+          "2": 42135
+        },
+        {
+          "0": 42135
+        },
+        {
+          "1": 24137,
+          "7": 3512,
+          "18": 14486
+        },
+        {
+          "0": 42135
+        },
+        {
+          "-109": 42135
+        }
+      ],
+      "trailing_zero_entries": 32,
+      "checks": [
+        "container framing",
+        "exact LZ4 decoded size",
+        "finite vertices",
+        "vertex and edge index bounds",
+        "face-edge correspondence",
+        "edge incidence",
+        "complete decoded-stream consumption"
+      ],
+      "limits": [
+        "Reverse-engineered read-only parser for the supplied format.",
+        "Face field semantics and game-engine acceptance are unverified.",
+        "Passing structural checks does not establish campaign readiness."
+      ]
+    },
+    "settlements": {
+      "settlements": 540,
+      "valid_village_bounds": 307,
+      "scene_coordinate_tolerance": 0.01,
+      "known_overlapping_positions": [
+        [
+          "castle_V1",
+          "village_B5_2"
+        ]
+      ],
+      "limits": [
+        "Gate and port navigation has not been verified in the game.",
+        "Inherited Calradia names, cultures and factions are unchanged."
+      ]
+    },
+    "remaining": [
+      "Actual Bannerlord 1.5.6 campaign loading requires game testing.",
+      "NavalDLC engine assets are required and were not supplied.",
+      "Gate markers, ports and overlapping settlement remain unchanged."
+    ]
+  }
+}
