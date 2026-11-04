@@ -1,5 +1,5 @@
 {
-  "candidate": "v0.10.0.0",
+  "candidate": "v0.10.1.0",
   "engine_tested": false,
   "crash_root_cause_confirmed": false,
   "observed_v9_result": "Game launches; campaign loading exits.",
@@ -17,12 +17,15 @@
   "runtime": {
     "model": "EastAsiaMap.Runtime.EastAsiaNavalMapDistanceModel",
     "submodule": "EastAsiaMap.Runtime.EastAsiaMapSubModule",
-    "compile_references": "Bannerlord.ReferenceAssemblies 1.5.6.125053-beta; .NET Standard 2.0",
-    "source_sha256": "a313b304136e0a2ec2a8ad446e12254f2f02109923c8b824d000e912cd58964e",
-    "dll_sha256": "69b3473a6dcb91d8581af59866e9614492025ddaf67aa91e2c8067a4c5c81cad",
+    "compile_references": "Exact Bannerlord 1.5.6.125053 net472 reference profile; Microsoft .NET Framework 4.7.2",
+    "source_sha256": "14626ad3a243def7e2008b523632cdff97aab1ca75fae7b453f571f2c406816f",
+    "dll_sha256": "ac19f4b2da627f85f0ba1b52005facdce75ea1e27fd9963099d7ff7c8bf12476",
     "managed_behavioral_cases_passed": 10,
     "cache_generation": "Once per capability per game; lazy native engine regeneration; no fake distance fallback",
-    "first_chance_exception_limit": 32
+    "first_chance_exception_limit": 32,
+    "platform": "AMD64/PE32Plus",
+    "assembly_version": "0.10.1.0",
+    "netstandard_dependency": false
   },
   "source_sha256": {
     "ModuleData/settlements.xml": "8bc6dc34f44226e15e39683c2c9c4c7bab49bd29173f99afe2383b030cb50eba",
@@ -42,8 +45,8 @@
     "SceneObj/Main_map/references.txt": "edaefeff4cbb750d0773af11666b56666a08965eef40980bc32bb6a69a828f8b",
     "SceneObj/Main_map/scene.xscene": "62bb99c77aa431696dccdd622566fd0f211f0566a6d7ec1712ffa6d0d8a9c610",
     "SceneObj/Main_map/terrain.bin": "08c3b4cc79432248a5c3fcde06ee4e0df1e0e828c7f8e7fcfb0abf848402c161",
-    "SubModule.xml": "0cb72a64570c8ee0077b5afa2cf9f4b5871299e07b319636448411c719f19210",
-    "bin/Win64_Shipping_Client/EastAsiaMap.Runtime.dll": "69b3473a6dcb91d8581af59866e9614492025ddaf67aa91e2c8067a4c5c81cad"
+    "SubModule.xml": "8d48034c6f2232822d4023ce7bac784124cb43a5fde18a483cd26d1851f61fb6",
+    "bin/Win64_Shipping_Client/EastAsiaMap.Runtime.dll": "ac19f4b2da627f85f0ba1b52005facdce75ea1e27fd9963099d7ff7c8bf12476"
   },
   "previous_structural_validation": {
     "candidate": "v0.9.0.0",
@@ -1443,5 +1446,18 @@
       "NavalDLC engine assets are required and were not supplied.",
       "Gate markers, ports and overlapping settlement remain unchanged."
     ]
+  },
+  "observed_v10_result": "Own runtime DLL could not load before campaign; screenshot has no HRESULT.",
+  "windows_loader_tested": false,
+  "installer": {
+    "sha256": "189d81f535489a067da5b23461f61ac4c8a66c378ea45e11d1ea6456bde96508",
+    "source_sha256": "8b473bce3a62c14a498d89294a485a7693f6f0016bd85b56dc5589993b464f1b",
+    "platform": "AMD64/PE32Plus",
+    "framework": ".NET Framework 4.7.2",
+    "filesystem_cases_passed": 9,
+    "windows_ui_tested": false,
+    "ntfs_zone_operation_tested": false,
+    "game_clr_load_tested": false,
+    "modification_scope": "Verified own module only; game assemblies read-only; old module backed up outside Modules."
   }
 }

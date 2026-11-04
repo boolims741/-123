@@ -18,6 +18,9 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
+[assembly: System.Reflection.AssemblyVersion("0.10.1.0")]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7.2", FrameworkDisplayName = ".NET Framework 4.7.2")]
+
 namespace EastAsiaMap.Runtime
 {
     public sealed class EastAsiaMapSubModule : MBSubModuleBase
@@ -26,7 +29,7 @@ namespace EastAsiaMap.Runtime
         {
             base.OnSubModuleLoad();
             RuntimeDiagnostics.InstallUnhandledExceptionHook();
-            RuntimeDiagnostics.Write("module.loaded version=v0.10.0.0 target=1.5.6.125053");
+            RuntimeDiagnostics.Write("module.loaded version=v0.10.1.0 target=1.5.6.125053 framework=net472 platform=x64");
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)

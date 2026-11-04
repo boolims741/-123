@@ -1,6 +1,6 @@
 param(
-    [string]$GameReferences = '/workspace/eastasia-map/analysis/reference156',
-    [string]$FrameworkReferences = '/workspace/eastasia-map/toolchain/netstandard20',
+    [string]$GameReferences = '/workspace/eastasia-map/analysis/reference156-net472',
+    [string]$FrameworkReferences = '/workspace/eastasia-map/toolchain/net472',
     [string]$OutputPath
 )
 $ErrorActionPreference = 'Stop'
@@ -15,12 +15,18 @@ $tree = [Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree]::ParseText($source, $pa
 $references = [Collections.Generic.List[Microsoft.CodeAnalysis.MetadataReference]]::new()
 foreach ($directory in @($FrameworkReferences, $GameReferences)) {
     if (-not (Test-Path -LiteralPath $directory -PathType Container)) { throw "Missing reference directory: $directory" }
-    foreach ($file in @(Get-ChildItem -LiteralPath $directory -Filter '*.dll' -File | Sort-Object Name)) {
-        $references.Add([Microsoft.CodeAnalysis.MetadataReference]::CreateFromFile($file.FullName))
+    foreach ($file in @(Get-ChildItem -LiteralPath $directory -Filter '*.dll' -File -Recurse | Sort-Object FullName)) {
+        $referenceStream = [IO.File]::OpenRead($file.FullName)
+        $referencePe = [System.Reflection.PortableExecutable.PEReader]::new($referenceStream)
+        try {
+            if ($referencePe.HasMetadata -and [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($referencePe).IsAssembly) {
+                $references.Add([Microsoft.CodeAnalysis.MetadataReference]::CreateFromFile($file.FullName))
+            }
+        } finally { $referencePe.Dispose(); $referenceStream.Dispose() }
     }
 }
 $options = [Microsoft.CodeAnalysis.CSharp.CSharpCompilationOptions]::new([Microsoft.CodeAnalysis.OutputKind]::DynamicallyLinkedLibrary)
-$options = $options.WithOptimizationLevel([Microsoft.CodeAnalysis.OptimizationLevel]::Release).WithDeterministic($true)
+$options = $options.WithOptimizationLevel([Microsoft.CodeAnalysis.OptimizationLevel]::Release).WithDeterministic($true).WithPlatform([Microsoft.CodeAnalysis.Platform]::X64)
 $compilation = [Microsoft.CodeAnalysis.CSharp.CSharpCompilation]::Create('EastAsiaMap.Runtime', [Microsoft.CodeAnalysis.SyntaxTree[]]@($tree), $references, $options)
 [void][IO.Directory]::CreateDirectory((Split-Path -Parent $OutputPath))
 $stream = [IO.File]::Create($OutputPath)
@@ -30,5 +36,5 @@ if (-not $result.Success) {
     Remove-Item -LiteralPath $OutputPath
     throw 'Runtime compilation failed. No DLL produced.'
 }
-Write-Output ('Compiled against explicit .NET Standard 2.0 and Bannerlord 1.5.6.125053 reference assemblies: ' + $OutputPath)
+Write-Output ('Compiled x64 against explicit .NET Framework 4.7.2 and Bannerlord 1.5.6.125053 net472 reference assemblies: ' + $OutputPath)
 Get-FileHash -LiteralPath $OutputPath -Algorithm SHA256
